@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function IdeaTank() {
   // Component
   const BiskitIcon = ({ icon }) => {
-    return <div className="biskit-icon">{icon}</div>;
+    return <div classNameName="biskit-icon">{icon}</div>;
   };
 
   // Contract Address & ABI
@@ -118,22 +118,22 @@ export default function IdeaTank() {
 
   return (
     <div
-      class="relative bg-[url('../images/background.jpeg')] bg-cover
+      className="relative bg-[url('../images/background.jpeg')] bg-cover
        bg-center flex h-screen"
     >
       <title>Buy A Biskit!</title>
       <meta name="description" content="Tipping site" />
       <link rel="icon" href="/biskit.ico" />
 
-      <main class="flex-auto">
-        <div class="justify-center items-center flex absolute left-0 top-0 h-20 w-20 bg-gray-900 m-8 bg-opacity-75 rounded-lg">
+      <main className="flex-auto">
+        <div className="justify-center items-center flex absolute left-0 top-0 h-20 w-20 bg-gray-900 m-8 bg-opacity-75 rounded-lg">
           <Link href="/about">
             <a>
               <BiskitIcon icon={<FaInfo />} />
             </a>
           </Link>
         </div>
-        <div class="justify-center items-center flex absolute right-0 top-0 h-20 w-20 bg-gray-900 m-8 bg-opacity-75 rounded-lg">
+        <div className="justify-center items-center flex absolute right-0 top-0 h-20 w-20 bg-gray-900 m-8 bg-opacity-75 rounded-lg">
           <Link href="/">
             <a>
               <BiskitIcon icon={<FaCookieBite />} />
@@ -141,16 +141,22 @@ export default function IdeaTank() {
           </Link>
         </div>
 
-        <h1 class="text-gray-100 flex justify-center items-center m-10 text-large font-gorilla ">
+        <h1 className="text-gray-100 flex justify-center items-center m-10 text-large font-gorilla ">
           Idea Tank
         </h1>
-        <div class="max-w-screen-xl mx-auto px-4">
-          <div class="-mx-4 flex flex-wrap justify-center items-center">
-            <div onClick={handlePrev} class="h-full flex flex-col p-4 xl:w-1/4">
+        <div className="max-w-screen-xl mx-auto px-4">
+          <div className="-mx-4 flex flex-wrap justify-center items-center">
+            <div
+              onClick={handlePrev}
+              className="h-full flex flex-col p-4 xl:w-1/4"
+            >
               <BiskitIcon icon={<FaArrowLeft />} />
             </div>
-            <div class=" flex flex-col p-4 xl:w-2/4">{cards[index]}</div>
-            <div onClick={handleNext} class="h-full flex flex-col p-4 xl:w-1/4">
+            <div className=" flex flex-col p-4 xl:w-2/4">{cards[index]}</div>
+            <div
+              onClick={handleNext}
+              className="h-full flex flex-col p-4 xl:w-1/4"
+            >
               <BiskitIcon icon={<FaArrowRight />} />
             </div>
           </div>

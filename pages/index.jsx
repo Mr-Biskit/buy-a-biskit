@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Home() {
   // Component
   const BiskitIcon = ({ icon }) => {
-    return <div className="biskit-icon">{icon}</div>;
+    return <div classNameName="biskit-icon">{icon}</div>;
   };
 
   // Contract Address & ABI
@@ -172,22 +172,22 @@ export default function Home() {
 
   return (
     <div
-      class="relative bg-[url('../images/background.jpeg')] bg-cover
+      className="relative bg-[url('../images/background.jpeg')] bg-cover
      bg-center flex h-screen"
     >
       <title>Buy A Biskit!</title>
       <meta name="description" content="Tipping site" />
       <link rel="icon" href="/biskit.ico" />
 
-      <main class="flex-auto">
-        <div class="justify-center items-center flex absolute left-0 top-0 h-20 w-20 bg-gray-900 m-8 bg-opacity-75 rounded-lg">
+      <main className="flex-auto">
+        <div className="justify-center items-center flex absolute left-0 top-0 h-20 w-20 bg-gray-900 m-8 bg-opacity-75 rounded-lg">
           <Link href="/ideaTank">
             <a>
               <BiskitIcon icon={<FaLightbulb />} />
             </a>
           </Link>
         </div>
-        <div class="justify-center items-center flex absolute right-0 top-0 h-20 w-20 bg-gray-900 m-8 bg-opacity-75 rounded-lg">
+        <div className="justify-center items-center flex absolute right-0 top-0 h-20 w-20 bg-gray-900 m-8 bg-opacity-75 rounded-lg">
           <Link href="/about">
             <a>
               <BiskitIcon icon={<FaInfo />} />
@@ -195,22 +195,22 @@ export default function Home() {
           </Link>
         </div>
 
-        <h1 class="text-gray-100 flex justify-center items-center m-10 text-large font-gorilla ">
+        <h1 className="text-gray-100 flex justify-center items-center m-10 text-large font-gorilla ">
           Buy A Biskit!
         </h1>
 
         {currentAccount ? (
-          <div class="max-w-screen-xl mx-auto px-4">
-            <div class="-mx-4 flex flex-wrap">
-              <div class="w-full flex flex-col p-4 sm:w-1/2 lg:w-1/3">
-                <div class="flex-1 px-10 py-12 rounded-lg shadow-lg  bg-gray-900 bg-opacity-75">
-                  <label class="text-gray-100 block mb-2 text-medium font-medium font-gorilla">
+          <div className="max-w-screen-xl mx-auto px-4">
+            <div className="-mx-4 flex flex-wrap">
+              <div className="w-full flex flex-col p-4 sm:w-1/2 lg:w-1/3">
+                <div className="flex-1 px-10 py-12 rounded-lg shadow-lg  bg-gray-900 bg-opacity-75">
+                  <label className="text-gray-100 block mb-2 text-medium font-medium font-gorilla">
                     Name
                   </label>
                   <br />
 
                   <input
-                    class="block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     id="name"
                     type="text"
                     placeholder="Enter your name"
@@ -219,15 +219,15 @@ export default function Home() {
                 </div>
               </div>
               <br />
-              <div class="w-full flex flex-col p-4 sm:w-1/2 lg:w-1/3">
-                <div class="flex-1 px-10 py-12 bg-gray-900 bg-opacity-75 rounded-lg shadow-lg">
-                  <label class="text-gray-100 block mb-2 text-medium font-medium font-gorilla">
+              <div className="w-full flex flex-col p-4 sm:w-1/2 lg:w-1/3">
+                <div className="flex-1 px-10 py-12 bg-gray-900 bg-opacity-75 rounded-lg shadow-lg">
+                  <label className="text-gray-100 block mb-2 text-medium font-medium font-gorilla">
                     Add an Idea For a Web3 Project
                   </label>
                   <br />
 
                   <textarea
-                    class="block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     rows={3}
                     placeholder="Enjoy your biskit!"
                     id="message"
@@ -236,30 +236,30 @@ export default function Home() {
                   ></textarea>
                 </div>
               </div>
-              <div class="w-full flex flex-col p-4 sm:w-1/2 lg:w-1/3">
-                <div class="flex-1 px-10 py-1 rounded-lg shadow-lg bg-gray-900 bg-opacity-75 flex-col space-y-4">
-                  <div class="l-1/4 flex flex-col">
-                    <label class="flex justify-center items-center text-gray-100 font-gorilla">
+              <div className="w-full flex flex-col p-4 sm:w-1/2 lg:w-1/3">
+                <div className="flex-1 px-10 py-1 rounded-lg shadow-lg bg-gray-900 bg-opacity-75 flex-col space-y-4">
+                  <div className="l-1/4 flex flex-col">
+                    <label className="flex justify-center items-center text-gray-100 font-gorilla">
                       Buy a Biskit: 0.001ETH
                     </label>
                   </div>
-                  <div class="l-1/4 flex flex-col">
+                  <div className="l-1/4 flex flex-col">
                     <button
-                      class="text-blue-700 border border-gray-100 hover:bg-gray-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-gray-100 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
+                      className="text-blue-700 border border-gray-100 hover:bg-gray-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-gray-100 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
                       type="button"
                       onClick={buyBiskit}
                     >
                       <BiskitIcon icon={<FaCookieBite size="20" />} />
                     </button>
                   </div>
-                  <div class="l-1/4  flex flex-col">
-                    <label class="flex justify-center items-center text-gray-100 font-gorilla">
+                  <div className="l-1/4  flex flex-col">
+                    <label className="flex justify-center items-center text-gray-100 font-gorilla">
                       Buy a Large Biskit: 0.005ETH
                     </label>
                   </div>
-                  <div class="l-1/4 flex flex-col">
+                  <div className="l-1/4 flex flex-col">
                     <button
-                      class="text-blue-700 border border-gray-100 hover:bg-gray-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-gray-100 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
+                      className="text-blue-700 border border-gray-100 hover:bg-gray-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-gray-100 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
                       type="button"
                       onClick={buyBigBiskit}
                     >
@@ -271,9 +271,9 @@ export default function Home() {
             </div>
           </div>
         ) : (
-          <div class="p-12 flex justify-center items-center">
+          <div className="p-12 flex justify-center items-center">
             <button
-              class="text-button h-36 bg-gray-900 bg-opacity-75 hover:bg-gray-900 hover:bg-opacity-80 text-gray-100 font-bold hover:text-white py-2 px-4 border border-gray-100 rounded mt-16"
+              className="text-button h-36 bg-gray-900 bg-opacity-75 hover:bg-gray-900 hover:bg-opacity-80 text-gray-100 font-bold hover:text-white py-2 px-4 border border-gray-100 rounded mt-16"
               onClick={connectWallet}
             >
               {" "}
