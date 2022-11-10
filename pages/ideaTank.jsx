@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function IdeaTank() {
   // Component
   const BiskitIcon = ({ icon }) => {
-    return <div classNameName="biskit-icon">{icon}</div>;
+    return <div className="biskit-icon">{icon}</div>;
   };
 
   // Contract Address & ABI
