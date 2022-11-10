@@ -79,7 +79,7 @@ export default function About() {
             <p className="text-center text-gray-50 font-sans">
               This project was created by Mr Biskit, for the Alchemy Road To
               Web3 week 2 challenge. If you like this project and want to follow
-              Mr Biskit's Web3 journey follow on twitter!{" "}
+              Mr Biskits Web3 journey follow on twitter!
               <a href="https://twitter.com/mr__biskit">
                 <BiskitIcon icon={<FaTwitter />} />
               </a>
