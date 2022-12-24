@@ -1,6 +1,6 @@
 # Buy A Biskit
 
-This project was made for the Alchemy #rtw3 Week 2
+Buy a Biskit is a decentralised application that utilizes interactive components created with Tailwind CSS to provide a seamless user experience. This platform allows users to purchase virtual Biskits using ETH, as well as contribute and view ideas related to Web 3 projects. The platform leverages blockchain technology to securely store and record all transactions and ideas on the chain, ensuring the integrity and transparency of the platform.
 
 You can see the backend for this repo: https://github.com/Mr-Biskit/buy-a-biskit-backend
 
